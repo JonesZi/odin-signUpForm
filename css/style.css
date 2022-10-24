@@ -1,0 +1,13 @@
+@font-face {
+    font-family: my-font;
+    src: url(../fonts/Norse-Bold.otf);
+  }
+
+html {
+    font-family: sans-serif;
+}
+
+  .spotlight {
+    font-family: my-font, sans-serif;
+}
+
