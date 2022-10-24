@@ -11,3 +11,6 @@ html {
     font-family: my-font, sans-serif;
 }
 
+label {
+    text-transform: uppercase;
+}
