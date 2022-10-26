@@ -23,10 +23,6 @@ a {
   color: inherit;
 }
 
-label {
-    text-transform: uppercase;
-}
-
 .spotlight {
 background-image: url(../img/background.avif);
 color: white; 
@@ -76,18 +72,67 @@ justify-content: space-between;
   justify-content: end;
 }
 
-
 .input {
   background-color: white;
   padding: 50px;
   box-sizing: border-box;
   border-color: #E5E7EB;
   box-shadow: 0 5px 5px rgb(161, 161, 161);
+  color:rgb(48, 48, 48);
+}
+
+.input>h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  border: 0;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgba(56, 55, 55, 0.685);
 }
 
 input {
   border-color: #E5E7EB;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 18px;
 }
+
+input:focus {
+  outline:none;
+  border-color: blue;
+  box-shadow: 1px 1px 1px rgb(114, 114, 114);
+}
+
+.error {
+  border-color: red;
+}
+
+
 
 .button {
   padding: 50px;

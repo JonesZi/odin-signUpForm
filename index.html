@@ -38,23 +38,35 @@
             <h1>Let's do this!</h1>
             <form action="http://httpbin.org/post" method="post" id="my-form">
                 <fieldset>
-                    <label for="first_name">First Name</label>
-                    <input maxlength="20" type="text" name="first_name" id="first_name">
-                    <label for="last_name">Last Name</label>
-                    <input maxlength="20" type="text" name="last_name" id="last_name">
+                    <div class="field">
+                        <label for="first_name">First Name</label>
+                        <input maxlength="20" type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="field">
+                        <label for="last_name">Last Name</label>
+                        <input maxlength="20" type="text" name="last_name" id="last_name">
+                    </div>
                 </fieldset>
 
                 <fieldset>
-                    <label for="email">E-Mail*</label>
-                    <input required type="email" name="email" id="email">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone">
+                    <div class="field">
+                        <label for="email">E-Mail*</label>
+                        <input required type="email" name="email" id="email">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
                 </fieldset>
                 <fieldset>
-                    <label for="password">Password*</label>
-                    <input required minlength="5" type="password" name="password" id="password">
-                    <label for="confirm-password">Confirm Password*</label>
-                    <input required minlength="5" type="password" name="confirm-password" id="confirm-password">
+                    <div class="field">
+                        <label for="password">Password*</label>
+                        <input required minlength="5" type="password" name="password" id="password" class="error">
+                    </div>
+                    <div class="field">
+                        <label for="confirm-password">Confirm Password*</label>
+                        <input required minlength="5" type="password" name="confirm-password" id="confirm-password" class="error">
+                    </div>
                 </fieldset>
             </form>
         </div>
