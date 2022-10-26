@@ -26,6 +26,9 @@ label {
 background-image: url(../img/background.avif);
 color: white; 
 width: 600px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 .title{
@@ -42,4 +45,8 @@ width: 600px;
 .norse {
   font-family: my-font, sans-serif;
   font-size: 90px;
+}
+
+.creds {
+  text-align: center;
 }
