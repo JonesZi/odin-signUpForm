@@ -3,14 +3,43 @@
     src: url(../fonts/Norse-Bold.otf);
   }
 
-html {
+body {
     font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
 }
 
-  .spotlight {
-    font-family: my-font, sans-serif;
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
 }
 
 label {
     text-transform: uppercase;
+}
+
+.spotlight {
+background-image: url(../img/background.avif);
+color: white; 
+width: 600px;
+}
+
+.title{
+  display: flex;
+  background: rgba(0, 0, 0, 0.452);
+  justify-content: center;
+  margin: 150px 0;
+}
+
+.logo {
+  height: 90px;
+}
+
+.norse {
+  font-family: my-font, sans-serif;
+  font-size: 90px;
 }
